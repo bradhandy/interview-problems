@@ -1,0 +1,22 @@
+Triangle of Xs
+
+Write a method accepting a positive integer (height).  The method will print lines of 'x' characters
+formatted such that the resulting output is in the shape of a two-dimensional pyramid.
+
+Examples:  (indented for readability)
+
+    height = 3
+
+      x
+     x x
+    x x x
+
+
+    height = 7
+          x
+         x x
+        x x x
+       x x x x
+      x x x x x
+     x x x x x x
+    x x x x x x x
