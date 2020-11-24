@@ -1,6 +1,6 @@
 Date Range
 
-1. Create a component, or class, to represent a date range.
+1. Create a class to represent a date range.
 
 A date range consists of a start date and an end date.  Don't worry about keeping track of time.
 
@@ -17,7 +17,20 @@ A and C would be considered equal since the start and end at the same point in t
 would not be equal to B since B starts after both A and C, and B ends after both A and C.
 
 
-3. Add a method to determine if one date range overlaps another.
+3. Add a method to determine if a single date falls within the date range.
+
+Given the following date range and individual dates:
+
+A:  |------------|
+B:        |
+C:               |
+D:                  |
+
+Dates B and C would be considered within the date range, but date D would fall outside of the range.
+Therefore, A.contains(B) and A.contains(C) would return true, while A.contains(D) would return false.
+
+
+4. Add a method to determine if one date range overlaps another.
 
 Given the following date range illustrations:
 
@@ -30,7 +43,7 @@ A and B would be considered as overlapping each other, and C and D would be cons
 each other.  However, C and D do not overlap either A or B.
 
 
-4. Add a method to merge a date range with an overlapping date range.
+5. Add a method to merge a date range with an overlapping date range.
 
 Given the following date range illustration and a merge method called 'mW':
 
@@ -44,7 +57,7 @@ A.mW(C) and C.mW(A) would return a merged date range with the start date of A an
 C.mW(B) and B.mW(C) would return a merged date range with the start date of C and the end date of B.
 
 
-5. Add a method taking a list of date ranges and return a list of date ranges
+6. Add a method taking a list of date ranges and return a list of date ranges
 where all overlapping date ranges in the original list are merged.
 
 Given the following date range illustrations:
